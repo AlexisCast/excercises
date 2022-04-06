@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
          <div>
             <nav>
-               <ul id="navigation">
+               <ul>
                   <li>
                      <Link to="/excerciseA">excerciseA</Link>
                   </li>
@@ -20,7 +20,6 @@ function App() {
             </nav>
          </div>
          <Routes>
-            <Route path="/excercise2" element={<Excercise2 />} />
             <Route path="/*" element={
                <Routes>
                   <Route path="excerciseA" element={<Excercise1 />} />
